@@ -23,12 +23,19 @@ class MehmetEmin extends StatelessWidget {
 }
 
 //ctrl+shift+alt:tum satırlardda aynı işlemi yapmak için kullanılır
-class YemekSayfasi extends StatelessWidget {
+
+class YemekSayfasi extends StatefulWidget {
+  const YemekSayfasi({Key? key}) : super(key: key);
+
+  @override
+  State<YemekSayfasi> createState() => _YemekSayfasiState();
+}
+
+class _YemekSayfasiState extends State<YemekSayfasi> {
+  @override
   int corbano = 1;
   int yemekno = 1;
   int tatlino = 1;
-
-  @override
   Widget build(BuildContext context) {
     return Center(
       child: Column(children: [
